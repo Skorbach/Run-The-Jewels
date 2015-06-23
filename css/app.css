@@ -1,0 +1,173 @@
+html,body{
+	margin:0;
+	height:100%;
+	background: #d8d8d8;
+}
+body{
+	background: #d8d8d8;
+}
+
+.roadmap{
+	position: relative;
+	width:1000px;
+	height:600px;
+	background: url(../img/grass_tile.png);
+	margin:0 auto;
+}
+.jewels{
+	position: absolute;
+	top: 100px;
+	left: 290px;
+	z-index: 10;
+}
+.jewels img{
+	width:300px;
+}
+.bank{
+	position: absolute;
+	top:35px;
+	left:50px;
+	z-index:10;
+}
+.bank img{
+	width:115px;
+}
+.car{
+	position: absolute;
+	top: 65px;
+	left: 160px;
+	z-index: 10;
+}
+.car img{
+	height:50px;
+}
+.road1{
+	position: absolute;
+	top:50px;
+	left:125px;
+	background: url(../img/road_tile_lr.png);
+	height:75px;
+	width:575px;
+}
+.corner1{
+	position: absolute;
+	left:700px;
+	top:50px;
+}
+.road2{
+	position: absolute;
+	top: 166px;
+	left: 734px;
+	background: url(../img/road_tile.png);
+	height: 215px;
+	width: 75px;
+}
+.corner2{
+	position: absolute;
+	left: 694px;
+	top: 375px;
+	-webkit-transform: rotate(90deg);
+}
+.road3{
+	position: absolute;
+	top: 415px;
+	left: 318px;
+	background: url(../img/road_tile_lr.png);
+	height: 75px;
+	width: 375px;
+
+}
+
+.corner3{
+	position: absolute;
+	left: 208px;
+	top: 409px;
+	-webkit-transform: rotate(-90deg);
+}
+.corner4{
+	position: absolute;
+	left: 202px;
+	top: 477px;
+	-webkit-transform: rotate(-180deg);
+}
+
+.road4{
+	position: absolute;
+	top: 523px;
+	left: 311px;
+	background: url(../img/road_tile_lr.png);
+	height: 75px;
+	width: 275px;
+
+}
+
+.house{
+	position: absolute;
+	top: 483px;
+	left: 530px;
+	z-index: 10;
+}
+.house img{
+	width:115px;
+}
+
+.flip180{
+/*	transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg); *//* IE 9 */
+  -webkit-transform: rotateY(-180deg); 
+}
+.flip_b_180{
+/*	transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg); *//* IE 9 */
+  -webkit-transform: rotateY(180deg); 
+}
+.rotate90{
+ 	-webkit-animation-name: spin;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 200ms;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 200ms;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+
+     -webkit-transform: rotate(90deg);
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(90deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(90deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(90deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(90deg);
+    }
+}
+
+
+.rotate_cc_90{
+ 	-webkit-animation-name: spin_cc;
+    -webkit-animation-duration: 200ms;
+    -webkit-animation-timing-function: linear;
+    -webkit-transform: rotate(-90deg);
+}
+@-webkit-keyframes spin_cc {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(-90deg); }
+}
+
